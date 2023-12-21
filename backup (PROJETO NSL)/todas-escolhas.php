@@ -154,30 +154,25 @@ $result = $conn->query($sql);
 
          <!-- Script JavaScript -->
          <script>
+         const enviar = document.getElementById('enviar_sim');
+          
          const botaoFecharPopup = document.getElementById('fechar-popup');
          const sobreposicaoPopup = document.getElementById('sobreposicao-popup');
          const botaoFecharPopup2 = document.getElementById('fechar-popup2');
          const sobreposicaoPopup2 = document.getElementById('sobreposicao-popup2');
-         const enviar = document.getElementById('enviar_sim');
-
-
-
+       
          function fecharPopup() {
              sobreposicaoPopup.style.display = 'none';
          }
-
          function mostrarPopup() {
              sobreposicaoPopup.style.display = 'block';
          }
-
          function fecharPopup2() {
              sobreposicaoPopup2.style.display = 'none';
          }
-
          function mostrarPopup2() {
              sobreposicaoPopup2.style.display = 'block';
          }
-
          botaoFecharPopup.addEventListener('click', fecharPopup);
          botaoFecharPopup2.addEventListener('click', fecharPopup2);
 
